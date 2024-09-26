@@ -1,5 +1,6 @@
 import connectDB from './backend/config/db.js'
 import userRoutes from './backend/routes/userRoute.js'
+import messageRoutes from './backend/routes/messageRoute.js'
 import express from 'express'
 import dotenv  from 'dotenv'
 
@@ -13,6 +14,9 @@ const app = express()
 
 //Creating API for user
 app.use('/api/users', userRoutes)
+
+//Creating API for message
+app.use('/api/messages', messageRoutes)
 
 const PORT = process.env.PORT || 5000
 

@@ -21,10 +21,14 @@ const userSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    primaryLanguage: {
+        type: String,
+        required: true
+    },
     isAdmin: {
         type: Boolean,
         required: true,
-        defualt: false
+        default: false
     },
 }, {
     timestamps: true
