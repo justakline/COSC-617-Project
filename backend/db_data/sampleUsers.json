@@ -1,0 +1,49 @@
+[
+     {
+       "firstName": "John",
+       "secondName": "Doe",
+       "userName": "john.doe123",
+       "email": "john.doe@example.com",
+       "password": "password123",
+       "primaryLanguage": "English",
+       "isAdmin": false
+     },
+     {
+       "firstName": "Jane",
+       "secondName": "Smith",
+       "userName": "jane.smith456",
+       "email": "jane.smith@example.com",
+       "password": "securepassword456",
+       "primaryLanguage": "Spanish",
+       "isAdmin": true
+     },
+     {
+       "firstName": "Alice",
+       "secondName": "Johnson",
+       "userName": "alice.johnson789",
+       "email": "alice.johnson@example.com",
+       "password": "alicepassword789",
+       "primaryLanguage": "French",
+       "isAdmin": false
+     },
+     {
+       "firstName": "Bob",
+       "secondName": "Brown",
+       "userName": "bob.brown001",
+       "email": "bob.brown@example.com",
+       "password": "brownpass001",
+       "primaryLanguage": "German",
+       "isAdmin": true
+     },
+     {
+       "firstName": "Charlie",
+       "secondName": "Davis",
+       "userName": "charlie.davis999",
+       "email": "charlie.davis@example.com",
+       "password": "davispassword999",
+       "primaryLanguage": "Japanese",
+       "isAdmin": false
+
+     }
+   ]
+   
