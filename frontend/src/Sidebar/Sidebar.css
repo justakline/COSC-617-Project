@@ -1,0 +1,29 @@
+.sideBar {
+  --icon-size: 40px;
+  height: 100%;
+  width: 70px;
+  background-color: rgb(150, 147, 147);
+
+  display: grid;
+  grid-column: 1;
+  justify-items: center;
+}
+
+.iconSection {
+  display: grid;
+  grid-column: 1;
+}
+
+.upper {
+  align-content: start;
+  padding-top: 40%;
+}
+.lower {
+  align-content: end;
+  padding-bottom: 40%;
+}
+
+svg {
+  width: var(--icon-size);
+  height: var(--icon-size);
+}

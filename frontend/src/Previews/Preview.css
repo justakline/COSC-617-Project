@@ -1,0 +1,26 @@
+.preview {
+  --margin-width: 5px;
+  width: auto;
+  height: 50px;
+  margin: var(--margin-width) var(--margin-width) var(--margin-width)
+    var(--margin-width);
+  padding: 0 0 0 0;
+  display: flex;
+  /* flex-direction: row; */
+  /* justify-content: start; */
+  text-align: left;
+}
+.body {
+  width: 100%;
+}
+
+.top {
+  width: 100%;
+  height: 50%;
+  /* display: flex; */
+  display: flex;
+
+  justify-content: space-between;
+
+  /* align-items: center; */
+}

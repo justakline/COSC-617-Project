@@ -1,0 +1,55 @@
+.midBar {
+  width: 20%;
+  /* height: auto; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(190, 188, 188);
+}
+
+.titleTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+}
+.titleTop > svg {
+  width: 30px;
+  height: 30px;
+}
+
+.searchbar {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* The box was really annoying */
+.react-search-box-dropdown {
+  display: none !important;
+}
+
+.groupings {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
+  padding-left: 15px;
+}
+
+.groupingItem {
+  color: rgb(184, 183, 183);
+  border-radius: 15px;
+  border: none;
+}
+
+.previews {
+  /* height: 80%; */
+  max-height: 100%;
+  overflow: auto;
+}
+
+.previews > svg {
+  height: 100%;
+  width: 100%;
+}

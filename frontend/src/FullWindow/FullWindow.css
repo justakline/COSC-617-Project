@@ -1,0 +1,11 @@
+.fullWindow {
+  --window-margin: 20px;
+
+  width: 100%;
+  /* Not height 100%, because that makes it too big */
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  margin: var(--window-margin) var(--window-margin) var(--window-margin)
+    var(--window-margin);
+}
