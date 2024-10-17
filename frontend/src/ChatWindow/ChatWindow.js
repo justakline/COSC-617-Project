@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import ChatMessage from "./ChatMessage";
 import "./ChatWindow.css";
+import { PiUserCircleDuotone } from "react-icons/pi";
 import { ResizableBox } from "react-resizable";
+import { BiDotsVerticalRounded } from "react-icons/bi";
+import { BiSearch } from "react-icons/bi";
 
 function ChatWindow() {
   // Test values for now
@@ -32,7 +35,16 @@ function ChatWindow() {
     //   handleSize={[20, 20]}
     // >
     <div className="chat-window">
-      <div className="chat-header">Chat</div>
+      <div className="chat-header">
+        <div className="chat-header-left">
+          <PiUserCircleDuotone class="user-icon-chat" />
+          My Name
+        </div>
+        <div className="chat-header-right">
+          <BiSearch class="user-right" />
+          <BiDotsVerticalRounded class="user-right" />
+        </div>
+      </div>
       <div className="chat-body">
         {/* Creates a chat message for each message and then displays them based on if they are the sender or not */}
         {messages.map((msg, index) => (

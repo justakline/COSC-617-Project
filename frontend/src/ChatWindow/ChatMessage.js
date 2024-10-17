@@ -1,13 +1,14 @@
-import React from 'react';
-import './ChatMessage.css';
+import React from "react";
+import "./ChatMessage.css";
 
 function ChatMessage({ message, isSender }) {
- 
-  const fromMessage = isSender ? 'Sender: ' : 'Receiver:'
+  const fromMessage = isSender ? "sender" : "receiver";
 
   return (
-    <div className={`chat-message ${isSender ? 'sender' : 'receiver'}`}>
-      <p> {fromMessage} {message}  </p>
+    <div class={`chat-message-wrapper-${fromMessage}`}>
+      <div className={`chat-message-${fromMessage} chat-message`}>
+        <p> {message} </p>
+      </div>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import DraggableChat from "./ChatWindow/DraggableChat";
+
 import "./App.css";
 import Sidebar from "./Sidebar/Sidebar";
 import FullWindow from "./FullWindow/FullWindow";
