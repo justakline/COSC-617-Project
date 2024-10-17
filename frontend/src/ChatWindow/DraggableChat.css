@@ -1,5 +1,5 @@
-.draggable-chat{
-     width: fit-content;
-     height:100%;
-     display: flex;
+.draggable-chat {
+  width: fit-content;
+  /* height: 100%; */
+  display: flex;
 }

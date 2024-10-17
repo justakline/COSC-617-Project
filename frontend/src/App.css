@@ -10,3 +10,8 @@ body,
   width: 100vw;
   height: 100vh;
 }
+
+.resizable {
+  /* width: 100% !important;
+  height: 100% !important; */
+}

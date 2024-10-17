@@ -1,22 +1,21 @@
 /* ChatWindow.css */
 .chat-window {
-     /* Remove fixed width and height */
-     /* width: 300px; 
-     height: 400px; */
-     border: 1px solid #ccc;
-     background-color: #f5f5f5;
-     display: flex;
-     flex-direction: column;
-     border-radius: 5px;
-     overflow: hidden; /* Change from 'hidden' to 'auto' */
-     resize: both;   /* Add this line to make it resizable */
-     min-width: 200px; /* Optional: Set minimum width */
-     min-height: 200px; /* Optional: Set minimum height */
-
-   }
-   .chat-body {
-     flex: 1;
-     padding: 10px;
-     overflow-y: auto;
-     background-color: #e5ddd5;
-   }
+  /* Remove fixed width and height */
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden; /* Change from 'hidden' to 'auto' */
+  resize: both; /* Add this line to make it resizable */
+  min-width: 200px; /* Optional: Set minimum width */
+  min-height: 200px; /* Optional: Set minimum height */
+}
+.chat-body {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #e5ddd5;
+}

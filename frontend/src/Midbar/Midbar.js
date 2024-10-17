@@ -9,7 +9,7 @@ function Midbar() {
   return (
     <div class="midBar">
       <div class="titleTop">
-        <h1>Title</h1>
+        <h1>Chats</h1>
         <CgAdd />
       </div>
       <div class="searchbar">

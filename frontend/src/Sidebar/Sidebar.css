@@ -12,15 +12,20 @@
 .iconSection {
   display: grid;
   grid-column: 1;
+  /* column-gap: 100px; */
+  grid-gap: 20px;
 }
 
 .upper {
   align-content: start;
-  padding-top: 40%;
+  padding-top: 40px;
+  display: grid;
+  grid-column: 1;
+  column-gap: 20px;
 }
 .lower {
   align-content: end;
-  padding-bottom: 40%;
+  padding-bottom: 40px;
 }
 
 svg {
