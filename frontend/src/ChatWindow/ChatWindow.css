@@ -42,4 +42,5 @@
   padding: 10px;
   overflow-y: auto;
   background-color: #e5ddd5;
+  overflow-y: scroll;
 }

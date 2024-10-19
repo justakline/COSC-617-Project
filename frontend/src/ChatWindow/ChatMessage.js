@@ -1,7 +1,9 @@
 import React from "react";
 import "./ChatMessage.css";
 
-function ChatMessage({ message, isSender }) {
+function ChatMessage({key, message, isSender }) {
+
+
   const fromMessage = isSender ? "sender" : "receiver";
 
   return (

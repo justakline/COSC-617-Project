@@ -1,12 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import ChatMessage from "./ChatMessage";
 import "./ChatWindow.css";
 import { PiUserCircleDuotone } from "react-icons/pi";
 import { ResizableBox } from "react-resizable";
 import { BiDotsVerticalRounded } from "react-icons/bi";
 import { BiSearch } from "react-icons/bi";
+import fs from 'fs';
+
+
 
 function ChatWindow() {
+  const messageEndRef = useRef(null); // Create a ref to track the bottom of the message list
+  
   // Test values for now
   const [messages, setMessages] = useState([
     { text: "Hi there!", isSender: false },
@@ -14,6 +19,28 @@ function ChatWindow() {
     { text: "How are you?", isSender: false },
     { text: "I'm good, thanks!", isSender: true },
   ]);
+
+
+  const getMessages = (otherID) => {
+    fs.readFile("..ExampleMessages.json" , (error, data)=>{
+      if (error){
+        setMessages([])
+        console.error("No Messages")
+        return;
+      }
+      
+      console.log(data.toJSON().id[otherID])
+      
+
+    } )
+  }
+
+  useEffect(() => {
+    if (messageEndRef.current) {
+      messageEndRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [messages]);
+
 
   const [inputValue, setInputValue] = useState("");
 
@@ -38,18 +65,19 @@ function ChatWindow() {
       <div className="chat-header">
         <div className="chat-header-left">
           <PiUserCircleDuotone class="user-icon-chat" />
-          My Name
+          Their name
         </div>
         <div className="chat-header-right">
           <BiSearch class="user-right" />
           <BiDotsVerticalRounded class="user-right" />
         </div>
       </div>
-      <div className="chat-body">
+      <div className="chat-body" onClick={getMessages(1)}>
         {/* Creates a chat message for each message and then displays them based on if they are the sender or not */}
         {messages.map((msg, index) => (
           <ChatMessage key={index} message={msg.text} isSender={msg.isSender} />
         ))}
+        <div ref={messageEndRef} />
       </div>
       <div className="chat-input">
         <input

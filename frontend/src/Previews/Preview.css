@@ -9,9 +9,15 @@
   /* flex-direction: row; */
   /* justify-content: start; */
   text-align: left;
+  cursor: pointer;
+  
 }
+
+
+
 .body {
   width: 250px;
+
 }
 
 .top {
@@ -21,4 +27,16 @@
   display: flex;
 
   justify-content: space-between;
+
 }
+
+
+.preview:hover{
+  border: 1px solid rgba(0, 0, 0, 0.116);
+}
+
+.clicked{
+  border: 2px solid rgb(0, 0, 0);
+}
+
+

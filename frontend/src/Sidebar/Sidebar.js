@@ -9,13 +9,13 @@ function Sidebar() {
   return (
     <div class="sideBar">
       <div class="iconSection upper">
-        <BiChat />
-        <SiStatuspage />
-        <GrGroup />
+        <BiChat onClick={() =>{}}/>
+        <SiStatuspage onClick={() =>{}}/>
+        <GrGroup onClick={() =>{}}/>
       </div>
       <div class="iconSection lower">
-        <SlSettings />
-        <CgProfile />
+        <SlSettings onClick={() =>{}}/>
+        <CgProfile onClick={() =>{}}/>
       </div>
     </div>
   );

@@ -18,6 +18,7 @@
 .titleTop > svg {
   width: 30px;
   height: 30px;
+  cursor: pointer;
 }
 
 .searchbar {
@@ -38,10 +39,17 @@
 }
 
 .groupingItem {
-  color: rgb(184, 183, 183);
+  color: rgb(59, 59, 59);
   border-radius: 15px;
   border: none;
+  cursor: pointer;
 }
+
+.groupingClicked{
+  background: rgb(194, 194, 194);
+  border: 1px solid black;
+}
+
 
 .previews {
   /* height: 80%; */
