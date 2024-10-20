@@ -66,3 +66,18 @@
   width: 100%;
   justify-content: start;
 }
+
+.message-sender {
+  text-align: right;
+}
+.message-receiver {
+  text-align: left;
+}
+.time-sender {
+  text-align: right;
+  font-size: 12px;
+}
+.time-receiver {
+  text-align: left;
+  font-size: 12px;
+}

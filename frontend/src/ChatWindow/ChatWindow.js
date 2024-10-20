@@ -5,62 +5,45 @@ import { PiUserCircleDuotone } from "react-icons/pi";
 import { ResizableBox } from "react-resizable";
 import { BiDotsVerticalRounded } from "react-icons/bi";
 import { BiSearch } from "react-icons/bi";
-import fs from 'fs';
 
-
-
-function ChatWindow() {
-  const messageEndRef = useRef(null); // Create a ref to track the bottom of the message list
-  
-  // Test values for now
-  const [messages, setMessages] = useState([
-    { text: "Hi there!", isSender: false },
-    { text: "Hello!", isSender: true },
-    { text: "How are you?", isSender: false },
-    { text: "I'm good, thanks!", isSender: true },
-  ]);
-
-
-  const getMessages = (otherID) => {
-    fs.readFile("..ExampleMessages.json" , (error, data)=>{
-      if (error){
-        setMessages([])
-        console.error("No Messages")
-        return;
-      }
-      
-      console.log(data.toJSON().id[otherID])
-      
-
-    } )
-  }
-
+function ChatWindow({
+  messages,
+  setMessages,
+  handleGetMessages,
+  otherID,
+  handleSetNewMessage,
+}) {
+  // Create a ref to track the bottom of the message list. Used to make it scroll you to the bottom when sending a new message
+  const messageEndRef = useRef(null);
   useEffect(() => {
     if (messageEndRef.current) {
       messageEndRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }, [messages]);
 
-
+  // When you click send or enter for a messages that is typed out
   const [inputValue, setInputValue] = useState("");
-
   const sendMessage = () => {
+    // If not empty
     if (inputValue.trim() !== "") {
-      setMessages([...messages, { text: inputValue, isSender: true }]);
+      const date = new Date();
+      const formattedDate = `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}-${date.getHours()}
+      :${date.getMinutes()}:${date.getSeconds()}`;
+      console.log(formattedDate);
+      setMessages([
+        ...messages,
+        {
+          sender: -1,
+          dateTime: formattedDate,
+          msg: inputValue,
+        },
+      ]);
+      handleSetNewMessage(otherID, -1, formattedDate, inputValue);
       setInputValue("");
     }
   };
 
   return (
-    // Allows for changing the size of teh boz
-    // <ResizableBox
-    //   // width={300}
-    //   // height={400}
-
-    //   minConstraints={[200, 200]}
-    //   maxConstraints={[600, 800]}
-    //   handleSize={[20, 20]}
-    // >
     <div className="chat-window">
       <div className="chat-header">
         <div className="chat-header-left">
@@ -72,10 +55,15 @@ function ChatWindow() {
           <BiDotsVerticalRounded class="user-right" />
         </div>
       </div>
-      <div className="chat-body" onClick={getMessages(1)}>
+      <div className="chat-body">
         {/* Creates a chat message for each message and then displays them based on if they are the sender or not */}
         {messages.map((msg, index) => (
-          <ChatMessage key={index} message={msg.text} isSender={msg.isSender} />
+          <ChatMessage
+            key={index}
+            message={msg.msg}
+            isSender={msg.sender == -1 ? true : false}
+            time={msg.dateTime}
+          />
         ))}
         <div ref={messageEndRef} />
       </div>
