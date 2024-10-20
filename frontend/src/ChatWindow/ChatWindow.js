@@ -9,7 +9,7 @@ import { BiSearch } from "react-icons/bi";
 function ChatWindow({
   messages,
   setMessages,
-  handleGetMessages,
+
   otherID,
   handleSetNewMessage,
 }) {
@@ -24,10 +24,13 @@ function ChatWindow({
   // When you click send or enter for a messages that is typed out
   const [inputValue, setInputValue] = useState("");
   const sendMessage = () => {
+    if (otherID == -1) {
+      return;
+    }
     // If not empty
     if (inputValue.trim() !== "") {
       const date = new Date();
-      const formattedDate = `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}-${date.getHours()}
+      const formattedDate = `${date.getFullYear()}-${date.getMonth()}-${date.getDate()} ${date.getHours()}
       :${date.getMinutes()}:${date.getSeconds()}`;
       console.log(formattedDate);
       setMessages([

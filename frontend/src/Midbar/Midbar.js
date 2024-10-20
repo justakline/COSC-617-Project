@@ -9,6 +9,7 @@ function Midbar({
   selectedPreviewIndex,
   setSelectedPreviewIndex,
   handleGetMessages,
+  allChats,
 }) {
   const groupingButtons = ["All", "Unread", "Favorites"];
   var [selectedGroupingIndex, setSelectedGroupingIndex] = useState(-1);
@@ -46,7 +47,23 @@ function Midbar({
 
       <div class="previews">
         {/* Sample */}
-        {[...Array(18)].map((_, i) => (
+        {allChats.map((chat, i) => {
+          console.log(chat.messages[chat.messages.length - 1]);
+          return (
+            <Preview
+              key={i}
+              clicked={i == selectedPreviewIndex}
+              onClick={() => {
+                setSelectedPreviewIndex(i);
+                handleGetMessages(i);
+              }}
+              name={chat.id}
+              lastMessage={chat.messages[chat.messages.length - 1]}
+            />
+          );
+        })}
+
+        {/* {[...Array(18)].map((_, i) => (
           <Preview
             key={i}
             clicked={i == selectedPreviewIndex}
@@ -55,7 +72,7 @@ function Midbar({
               handleGetMessages(i);
             }}
           />
-        ))}
+        ))} */}
       </div>
     </div>
   );

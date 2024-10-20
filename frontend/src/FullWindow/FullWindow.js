@@ -29,10 +29,10 @@ function FullWindow() {
         selectedPreviewIndex={selectedPreviewIndex}
         setSelectedPreviewIndex={setSelectedPreviewIndex}
         handleGetMessages={handleGetMessages}
+        allChats={ExampleMessages}
       />
       <ChatWindow
         messages={messages}
-        handleGetMessages={handleGetMessages}
         setMessages={setMessages}
         otherID={selectedPreviewIndex}
         handleSetNewMessage={handleSetNewMessage}
