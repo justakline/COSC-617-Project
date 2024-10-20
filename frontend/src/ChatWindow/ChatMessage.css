@@ -39,6 +39,7 @@
   padding-right: 20px;
   padding-left: 20px;
   margin-top: 3px;
+  border: dotted rgb(97, 97, 97) 2px;
 }
 .chat-message-sender {
   text-align: left;
@@ -51,7 +52,7 @@
 .chat-message-receiver {
   text-align: right;
   margin-left: 30px;
-  background-color: rgb(158, 158, 158);
+  background-color: rgb(211, 209, 209);
   border-radius: 0px 10px 10px 20px;
   width: fit-content;
 }

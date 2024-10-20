@@ -13,6 +13,7 @@ function Midbar({
 }) {
   const groupingButtons = ["All", "Unread", "Favorites"];
   var [selectedGroupingIndex, setSelectedGroupingIndex] = useState(-1);
+
   return (
     <div class="midBar">
       <div class="titleTop">
@@ -48,14 +49,14 @@ function Midbar({
       <div class="previews">
         {/* Sample */}
         {allChats.map((chat, i) => {
-          console.log(chat.messages[chat.messages.length - 1]);
+          // console.log(chat.messages[chat.messages.length - 1]);
           return (
             <Preview
               key={i}
               clicked={i == selectedPreviewIndex}
               onClick={() => {
                 setSelectedPreviewIndex(i);
-                handleGetMessages(i);
+                handleGetMessages(chat.id);
               }}
               name={chat.id}
               lastMessage={chat.messages[chat.messages.length - 1]}

@@ -5,14 +5,9 @@ import { PiUserCircleDuotone } from "react-icons/pi";
 import { ResizableBox } from "react-resizable";
 import { BiDotsVerticalRounded } from "react-icons/bi";
 import { BiSearch } from "react-icons/bi";
+import { RxDropdownMenu } from "react-icons/rx";
 
-function ChatWindow({
-  messages,
-  setMessages,
-
-  otherID,
-  handleSetNewMessage,
-}) {
+function ChatWindow({ messages, setMessages, otherID, handleSetNewMessage }) {
   // Create a ref to track the bottom of the message list. Used to make it scroll you to the bottom when sending a new message
   const messageEndRef = useRef(null);
   useEffect(() => {
@@ -30,13 +25,16 @@ function ChatWindow({
     // If not empty
     if (inputValue.trim() !== "") {
       const date = new Date();
-      const formattedDate = `${date.getFullYear()}-${date.getMonth()}-${date.getDate()} ${date.getHours()}
-      :${date.getMinutes()}:${date.getSeconds()}`;
-      console.log(formattedDate);
+      console.log(`Sending to ${otherID}`);
+      const formattedDate = `${date.getFullYear()}-${
+        date.getMonth() + 1
+      }-${date.getDate()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+      // console.log(formattedDate);
+
       setMessages([
         ...messages,
         {
-          sender: -1,
+          sender: -1, //Myself right now
           dateTime: formattedDate,
           msg: inputValue,
         },
@@ -51,15 +49,15 @@ function ChatWindow({
       <div className="chat-header">
         <div className="chat-header-left">
           <PiUserCircleDuotone class="user-icon-chat" />
-          Their name
+          Name: {otherID ? otherID : ""}
         </div>
         <div className="chat-header-right">
-          <BiSearch class="user-right" />
           <BiDotsVerticalRounded class="user-right" />
         </div>
       </div>
       <div className="chat-body">
         {/* Creates a chat message for each message and then displays them based on if they are the sender or not */}
+
         {messages.map((msg, index) => (
           <ChatMessage
             key={index}
