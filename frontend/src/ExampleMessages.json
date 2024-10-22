@@ -1,0 +1,351 @@
+[
+  {
+    "id": 0,
+    "messages": [
+      {
+        "sender": -1,
+        "dateTime": "2024-10-18 07:50:20",
+        "msg": "Hey! How's it going?"
+      },
+      {
+        "sender": 1,
+        "dateTime": "2024-10-18 07:51:10",
+        "msg": "I'm good! How about you?"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "messages": [
+      {
+        "sender": -1,
+        "dateTime": "2024-10-18 07:50:20",
+        "msg": "Hey! How's it going?"
+      },
+      {
+        "sender": 1,
+        "dateTime": "2024-10-18 07:51:10",
+        "msg": "I'm good! How about you?"
+      },
+      {
+        "sender": -1,
+        "dateTime": "2024-10-18 07:52:00",
+        "msg": "Doing well, thanks for asking."
+      },
+      {
+        "sender": -1,
+        "dateTime": "2024-10-18 07:52:30",
+        "msg": "Did you finish that project?"
+      },
+      {
+        "sender": 1,
+        "dateTime": "2024-10-18 07:53:10",
+        "msg": "Not yet, still working on it."
+      },
+      {
+        "sender": -1,
+        "dateTime": "2024-10-18 07:53:30",
+        "msg": "Need any help with it?"
+      },
+      {
+        "sender": 1,
+        "dateTime": "2024-10-18 07:54:10",
+        "msg": "Actually, yeah, that would be great."
+      },
+      {
+        "sender": -1,
+        "dateTime": "2024-10-18 07:55:00",
+        "msg": "Cool, let me know when you're free."
+      },
+      {
+        "sender": 1,
+        "dateTime": "2024-10-18 07:55:30",
+        "msg": "Will do. Thanks!"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "messages": [
+      {
+        "sender": -1,
+        "dateTime": "2024-10-11 15:10:30",
+        "msg": "Hey, did you see the game last night?"
+      },
+      {
+        "sender": 2,
+        "dateTime": "2024-10-11 15:11:10",
+        "msg": "Yeah, it was crazy!"
+      },
+      {
+        "sender": -1,
+        "dateTime": "2024-10-11 15:12:00",
+        "msg": "I can't believe that last-minute goal."
+      },
+      {
+        "sender": 2,
+        "dateTime": "2024-10-11 15:12:30",
+        "msg": "I know, right? Total game-changer."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "messages": [
+      {
+        "sender": 3,
+        "dateTime": "2024-09-28 08:47:57",
+        "msg": "Hey, are you coming to the meeting today?"
+      },
+      {
+        "sender": -1,
+        "dateTime": "2024-09-28 08:48:30",
+        "msg": "Yeah, I'll be there. What time again?"
+      },
+      { "sender": 3, "dateTime": "2024-09-28 08:49:00", "msg": "2 PM." },
+      {
+        "sender": -1,
+        "dateTime": "2024-09-28 08:49:30",
+        "msg": "Cool, see you then."
+      },
+      { "sender": 3, "dateTime": "2024-09-28 08:50:00", "msg": "See you." }
+    ]
+  },
+  {
+    "id": 4,
+    "messages": []
+  },
+  {
+    "id": 5,
+    "messages": [
+      {
+        "sender": -1,
+        "dateTime": "2024-10-01 09:00:00",
+        "msg": "Hey, are we still on for tonight?"
+      },
+      {
+        "sender": 5,
+        "dateTime": "2024-10-01 09:01:00",
+        "msg": "Yeah, what time?"
+      },
+      { "sender": -1, "dateTime": "2024-10-01 09:02:00", "msg": "7 PM?" },
+      { "sender": 5, "dateTime": "2024-10-01 09:03:00", "msg": "Sounds good!" }
+    ]
+  },
+  {
+    "id": 6,
+    "messages": [
+      {
+        "sender": -1,
+        "dateTime": "2024-10-05 12:20:00",
+        "msg": "Hey, did you get my email?"
+      },
+      {
+        "sender": 6,
+        "dateTime": "2024-10-05 12:21:00",
+        "msg": "Yeah, I saw it. I'll reply soon."
+      },
+      {
+        "sender": -1,
+        "dateTime": "2024-10-05 12:22:00",
+        "msg": "No rush, just wanted to check."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "messages": [
+      { "sender": -1, "dateTime": "2024-09-25 14:30:00", "msg": "Hello!" },
+      {
+        "sender": 7,
+        "dateTime": "2024-09-25 14:31:00",
+        "msg": "Hey, how's it going?"
+      },
+      {
+        "sender": -1,
+        "dateTime": "2024-09-25 14:32:00",
+        "msg": "Pretty good, just busy with work."
+      },
+      { "sender": 7, "dateTime": "2024-09-25 14:33:00", "msg": "I hear that!" }
+    ]
+  },
+  {
+    "id": 8,
+    "messages": [
+      {
+        "sender": -1,
+        "dateTime": "2024-09-26 12:40:00",
+        "msg": "What are your plans for the weekend?"
+      },
+      {
+        "sender": 8,
+        "dateTime": "2024-09-26 12:41:00",
+        "msg": "Not sure yet, maybe just relaxing."
+      },
+      { "sender": -1, "dateTime": "2024-09-26 12:42:00", "msg": "Sounds nice." }
+    ]
+  },
+  {
+    "id": 9,
+    "messages": [
+      {
+        "sender": 9,
+        "dateTime": "2024-10-01 18:00:00",
+        "msg": "Can you send me that document?"
+      },
+      {
+        "sender": -1,
+        "dateTime": "2024-10-01 18:01:00",
+        "msg": "Sure, give me a minute."
+      },
+      { "sender": 9, "dateTime": "2024-10-01 18:02:00", "msg": "Thanks!" },
+      {
+        "sender": -1,
+        "dateTime": "2024-10-01 18:03:00",
+        "msg": "Just sent it."
+      },
+      {
+        "sender": 9,
+        "dateTime": "2024-10-01 18:04:00",
+        "msg": "Got it, appreciate it."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "messages": [
+      {
+        "sender": -1,
+        "dateTime": "2024-10-02 09:30:00",
+        "msg": "Hey, how's your day going?"
+      },
+      {
+        "sender": 10,
+        "dateTime": "2024-10-02 09:31:00",
+        "msg": "Pretty good, just got out of a meeting."
+      },
+      {
+        "sender": -1,
+        "dateTime": "2024-10-02 09:32:00",
+        "msg": "Nice, anything exciting?"
+      },
+      {
+        "sender": 10,
+        "dateTime": "2024-10-02 09:33:00",
+        "msg": "Not really, just the usual."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "messages": []
+  },
+  {
+    "id": 12,
+    "messages": [
+      {
+        "sender": -1,
+        "dateTime": "2024-09-28 03:48:01",
+        "msg": "Good morning!"
+      },
+      {
+        "sender": 12,
+        "dateTime": "2024-09-28 03:49:01",
+        "msg": "Morning! How are you?"
+      },
+      {
+        "sender": -1,
+        "dateTime": "2024-09-28 03:50:01",
+        "msg": "I'm great, you?"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "messages": []
+  },
+  {
+    "id": 14,
+    "messages": [
+      {
+        "sender": 14,
+        "dateTime": "2024-09-23 10:56:40",
+        "msg": "Hey, can I ask you a question?"
+      },
+      {
+        "sender": -1,
+        "dateTime": "2024-09-23 10:57:40",
+        "msg": "Sure, what's up?"
+      },
+      {
+        "sender": 14,
+        "dateTime": "2024-09-23 10:58:40",
+        "msg": "What was the name of that tool you mentioned?"
+      },
+      {
+        "sender": -1,
+        "dateTime": "2024-09-23 10:59:40",
+        "msg": "Oh, it was Notion."
+      },
+      {
+        "sender": 14,
+        "dateTime": "2024-09-23 11:00:40",
+        "msg": "Thanks, that's what I needed!"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "messages": [
+      {
+        "sender": 15,
+        "dateTime": "2024-10-02 10:42:51",
+        "msg": "Hey, you free later?"
+      },
+      {
+        "sender": -1,
+        "dateTime": "2024-10-02 10:43:51",
+        "msg": "Yeah, what's up?"
+      },
+      {
+        "sender": 15,
+        "dateTime": "2024-10-02 10:44:51",
+        "msg": "I need to talk about the project."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "messages": [
+      {
+        "sender": 16,
+        "dateTime": "2024-09-23 02:43:06",
+        "msg": "Did you see the email I forwarded?"
+      },
+      {
+        "sender": -1,
+        "dateTime": "2024-09-23 02:44:06",
+        "msg": "Yeah, I saw it. I'll follow up soon."
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "messages": []
+  },
+  {
+    "id": 18,
+    "messages": [
+      {
+        "sender": -1,
+        "dateTime": "2024-09-30 14:15:00",
+        "msg": "Hey, just checking in."
+      },
+      {
+        "sender": 18,
+        "dateTime": "2024-09-30 14:16:00",
+        "msg": "Hey, thanks for checking in."
+      }
+    ]
+  }
+]

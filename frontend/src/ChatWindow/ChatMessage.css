@@ -1,0 +1,84 @@
+/* ChatWindow.css */
+
+.chat-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.chat-input {
+  padding: 10px;
+  display: flex;
+  background-color: #fff;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.chat-input button {
+  margin-left: 10px;
+  padding: 6px 12px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.chat-body {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #e5ddd5;
+}
+.chat-message {
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-top: 3px;
+  border: dotted rgb(97, 97, 97) 2px;
+}
+.chat-message-sender {
+  text-align: left;
+  margin-right: 30px;
+  background-color: rgb(7, 231, 7);
+  border-radius: 10px 0px 20px 10px;
+  width: fit-content;
+}
+
+.chat-message-receiver {
+  text-align: right;
+  margin-left: 30px;
+  background-color: rgb(211, 209, 209);
+  border-radius: 0px 10px 10px 20px;
+  width: fit-content;
+}
+
+.chat-message-wrapper-sender {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+.chat-message-wrapper-receiver {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+}
+
+.message-sender {
+  text-align: right;
+}
+.message-receiver {
+  text-align: left;
+}
+.time-sender {
+  text-align: right;
+  font-size: 12px;
+}
+.time-receiver {
+  text-align: left;
+  font-size: 12px;
+}
