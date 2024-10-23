@@ -17,7 +17,7 @@ function ChatWindow({ messages, setMessages, otherID, handleSetNewMessage }) {
   // When you click send or enter for a messages that is typed out
   const [inputValue, setInputValue] = useState("");
   const sendMessage = () => {
-    if (otherID == -1) {
+    if (otherID === -1) {
       return;
     }
     // If not empty
