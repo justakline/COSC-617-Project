@@ -35,7 +35,7 @@ function Midbar({
           <button
             key={i}
             class={`groupingItem ${
-              i == selectedGroupingIndex ? "groupingClicked" : ""
+              i === selectedGroupingIndex ? "groupingClicked" : ""
             }`}
             onClick={() => {
               setSelectedGroupingIndex(i);
@@ -53,7 +53,7 @@ function Midbar({
           return (
             <Preview
               key={i}
-              clicked={i == selectedPreviewIndex}
+              clicked={i === selectedPreviewIndex}
               onClick={() => {
                 setSelectedPreviewIndex(i);
                 handleGetMessages(chat.id);

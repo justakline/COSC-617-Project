@@ -1,6 +1,5 @@
 import { PiUserCircleDuotone } from "react-icons/pi";
 import "./Preview.css";
-import { useState } from "react";
 
 function Preview({ key, clicked, onClick, name, lastMessage }) {
   return (

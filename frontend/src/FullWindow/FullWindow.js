@@ -34,12 +34,12 @@ function FullWindow() {
 
   // Using example messages, but we need to replace this with database calls
   const handleGetMessages = (otherID) => {
-    var items = ExampleMessages.filter((item) => item.id == otherID);
+    var items = ExampleMessages.filter((item) => item.id === otherID);
     setMessages(items[0].messages);
   };
 
   const handleSetNewMessage = (otherID, senderID, date, msg) => {
-    var chat = ExampleMessages.find((chat) => chat.id == otherID);
+    var chat = ExampleMessages.find((chat) => chat.id === otherID);
     const newMessage = { sender: senderID, dateTime: date, msg: msg };
     chat.messages.push(newMessage);
     // Want the preview to move to the top and have the highlight also move

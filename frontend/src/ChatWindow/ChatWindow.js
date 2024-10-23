@@ -2,10 +2,8 @@ import React, { useState, useRef, useEffect } from "react";
 import ChatMessage from "./ChatMessage";
 import "./ChatWindow.css";
 import { PiUserCircleDuotone } from "react-icons/pi";
-import { ResizableBox } from "react-resizable";
+
 import { BiDotsVerticalRounded } from "react-icons/bi";
-import { BiSearch } from "react-icons/bi";
-import { RxDropdownMenu } from "react-icons/rx";
 
 function ChatWindow({ messages, setMessages, otherID, handleSetNewMessage }) {
   // Create a ref to track the bottom of the message list. Used to make it scroll you to the bottom when sending a new message
@@ -62,7 +60,7 @@ function ChatWindow({ messages, setMessages, otherID, handleSetNewMessage }) {
           <ChatMessage
             key={index}
             message={msg.msg}
-            isSender={msg.sender == -1 ? true : false}
+            isSender={msg.sender === -1 ? true : false}
             time={msg.dateTime}
           />
         ))}

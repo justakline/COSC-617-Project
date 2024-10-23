@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+// import axios from "axios";
 
 import "./App.css";
-import Sidebar from "./Sidebar/Sidebar";
+
 import FullWindow from "./FullWindow/FullWindow";
 const App = () => {
   // const [users, setUsers] = useState([])
@@ -19,29 +19,29 @@ const App = () => {
   const [messages, setMessages] = useState([]);
   const [JohnMessages, setJohnMessages] = useState([]);
 
-  const getUserData = async () => {
-    const res = await axios.get("/api/users");
-    if (res) {
-      setUsers(res.data);
-      return;
-    }
-  };
+  // const getUserData = async () => {
+  //   const res = await axios.get("/api/users");
+  //   if (res) {
+  //     setUsers(res.data);
+  //     return;
+  //   }
+  // };
 
-  const getMessageData = async () => {
-    const res = await axios.get("/api/messages");
-    if (res) {
-      setMessages(res.data);
-      return;
-    }
-  };
+  // const getMessageData = async () => {
+  //   const res = await axios.get("/api/messages");
+  //   if (res) {
+  //     setMessages(res.data);
+  //     return;
+  //   }
+  // };
 
-  const getMessageDataById = async () => {
-    const res = await axios.get("/api/messages/Johndoe");
-    if (res) {
-      setJohnMessages(res.data);
-      return;
-    }
-  };
+  // const getMessageDataById = async () => {
+  //   const res = await axios.get("/api/messages/Johndoe");
+  //   if (res) {
+  //     setJohnMessages(res.data);
+  //     return;
+  //   }
+  // };
 
   // Returning 404s right now :(
   useEffect(() => {
